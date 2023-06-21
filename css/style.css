@@ -334,5 +334,81 @@ body {
 /* ---------------------Schedule---------------------- */
 
 .schedule-container {
-    width: 1380px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 113px;
+    width: 100%;
+    height: 690px;
+    border-radius: 32px;
+    background: #131212;
+}
+.schedule-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(180deg, #232426 50%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 30px 30px 0px 0px;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+}
+.schedule-svg {
+    position: absolute;
+    width: 100%;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+.schedule-info {
+    display: flex;
+    margin: 60px 0px 30px 60px;
+}
+.schedule-info-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 62px;
+    text-decoration-line: underline;
+    color: #F9FAFB;
+    order: 3;
+    flex-grow: 0;
+    z-index: 3;
+}
+.schedule-info-paragraphs {
+    margin: 00px 0px 12px 60px;
+}
+.schedule-info-paragraphs-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 38px;
+    text-decoration-line: underline;
+    color: #F9FAFB;
+}
+.schedule-info-paragraphs-text2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-decoration-line: underline;
+    color: #F9FAFB;
+}
+.schedule-info-functions-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    text-decoration-line: underline;
+    color: #888888;
+}
+.text-ff {
+    margin: 0px 0px 25px 60px;
+}
+.text-ff2 {
+    margin: 0px 0px 60px 60px;
+}
+.text-ff3 {
+    margin: 60px 0px 0px 60px;
 }
