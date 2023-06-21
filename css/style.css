@@ -489,3 +489,199 @@ body {
     text-transform: uppercase;
     color: #141414;
 }
+/* -----------------Scheduling Business--------------- */
+
+.schedule-business-main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 650px;
+}
+.schedule-business-svg {
+    position: absolute;
+    width: 100%;
+}
+.schedule-business-div {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.schedule-business-h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 87px;
+    line-height: 93px;
+    text-align: center;
+    letter-spacing: -1.35px;
+    text-decoration-line: underline;
+    color: #141414;
+}
+.schedule-business-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.schedule-business-button-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 54px;
+    background: #141414;
+    border: 2px solid #141414;
+    border-radius: 32px;
+}
+.schedule-business-button-span-black {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #F9FAFB;
+}
+.schedule-business-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 276px;
+    height: 54px;
+    background: #F4F4F4;
+    border: 2px dashed #141414;
+    border-radius: 32px;
+}
+.schedule-business-button-span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #141414;
+}
+.schedule-business-info {
+    display: flex;
+    position: relative;
+    width: 1050px;
+    height: 324px;
+    border: 2px solid #141414;
+    border-radius: 16px;
+    left: 10%;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+}
+.schedule-business-info-main {
+    display: flex;
+    height: 320px;
+    border-right: 2px dashed #141414;
+}
+.schedule-business-info-main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.schedule-business-card {
+    display: flex;
+    width: 279px;
+    height: 224px;
+    margin: 48px 16px 48px 32px;
+    background: #FFFFFF;
+    border: 8px solid #141414;
+    border-radius: 16px;
+}
+.schedule-business-card2 {
+    display: flex;
+    width: 373px;
+    height: 224px;
+    margin: 48px 42px 48px 0px;
+    background: #FFFFFF;
+    border: 8px solid #141414;
+    border-radius: 16px;
+}
+.schedule-business-card-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.schedule-business-card-img {
+    width: 64px;
+    height: 64px;
+    margin: 20px 0px 0px 20px;
+}
+.schedule-business-card-info-text {
+    margin: 20px 0px 10px 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #141414;
+}
+.schedule-business-card-info-text2 {
+    margin: 0px 0px 0px 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #141414;
+}
+
+.schedule-business-info-telemedicine {
+    display: flex;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+.schedule-business-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.schedule-business-info-text-h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 32px;
+    text-decoration-line: underline;
+    color: #141414;
+}
+.schedule-business-info-text-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    text-decoration-line: underline;
+    color: #141414;
+}
+
+.schedule-business-button-general {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 231px;
+    height: 90px;
+    right: 6%;
+    top: 92%;
+    background: #F9FAFB;
+    border: 2px solid #141414;
+    box-shadow: 0px 4px 0px #141414;
+    border-radius: 32px;
+}
+.schedule-business-button-general-span {
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
