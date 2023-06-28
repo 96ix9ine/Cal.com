@@ -332,6 +332,116 @@ body {
     margin-left: 20px;
 }
 
+@media (max-width: 1400px) {
+    .header-info-text {
+        font-size: 18px;
+    }
+    .header-info-text-2,
+    .header-info-text-2-span {
+        font-size: 80px;
+    }
+    .header-form-div-input {
+        width: 600px;
+    }
+    .header-calendar {
+        top: -20%;
+    }
+    .header-calendar-info,
+    .header-calendar-numbers {
+        height: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .header-container {
+        justify-content: space-around;
+    }
+    .header-info-text {
+        font-size: 18px;
+    }
+    .header-info-text-2,
+    .header-info-text-2-span {
+        font-size: 70px;
+    }
+    .header-calendar {
+        right: 10%;
+    }
+    .header-calendar-info {
+        display: none;
+    }
+    .header-calendar-all {
+        width: fit-content;
+    }
+    .header-form-div-input {
+        width: 430px;
+    }
+    .header-form-button {
+        width: 200px;
+    }
+    .header-form-button-text {
+        font-size: 19px;
+    }
+    .header-form-button-svg {
+        margin-left: 6px;
+    }
+}
+@media (max-width: 992px) {
+    .header-container {
+        justify-content: space-between;
+    }
+    .header-info-div {
+        width: 370px;
+    }
+    .header-info-text {
+        font-size: 18px;
+    }
+    .header-info-text-2,
+    .header-info-text-2-span {
+        font-size: 50px;
+    }
+    .header-calendar {
+        top: -10%;
+        right: 0%;
+    }
+    .header-form-div-input {
+        width: 315px;
+    }
+    .header-form-button {
+        flex-direction: column;
+        width: 200px;
+    }
+    .header-form-button-svg {
+        margin-left: 0px;
+        transform: rotate(90deg);
+    }
+}
+@media (max-width: 768px) {
+    .header-smalldiv,
+    .header-info-text {
+        display: none;
+    }
+    .header-info-text-2,
+    .header-info-text-2-span {
+        display: none;
+    }
+    .header-calendar {
+        position: static;
+        order: -1;
+    }
+    .header-calendar-info {
+        display: block;
+        width: fit-content;
+    }
+    .header-calendar-info-submain-general-item:nth-child(1) {
+        display: none;
+    }
+    .header-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-form-button {
+        margin: 20px 0px 0px 0px;
+    }
+}
 /* ---------------------Schedule---------------------- */
 
 .schedule-container {
@@ -379,6 +489,7 @@ body {
 }
 .schedule-info-paragraphs {
     margin: 00px 0px 12px 60px;
+    z-index: 4;
 }
 .schedule-info-paragraphs-text {
     font-style: normal;
@@ -396,6 +507,9 @@ body {
     text-decoration-line: underline;
     color: #F9FAFB;
 }
+.schedule-info-functions {
+    z-index: 5;
+}
 .schedule-info-functions-text {
     font-style: normal;
     font-weight: 400;
@@ -412,6 +526,31 @@ body {
 }
 .text-ff3 {
     margin: 60px 0px 0px 60px;
+}
+@media (max-width: 992px) {
+    .schedule-info-text {
+        font-size: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .schedule-info-text {
+        font-size: 40px;
+    }
+    .schedule-info-paragraphs-text {
+        font-size: 22px;
+    }
+    .schedule-info-paragraphs-text2 {
+        font-size: 18px;
+    }
+    .schedule-info-functions-text {
+        font-size: 20px;
+    }
+    .text-ff2 {
+        margin: 0px 0px 20px 60px;
+    }
+    .text-ff3 {
+        margin: 20px 0px 0px 60px;
+    }
 }
 /* -------------------Favorite Apps------------------ */
 
@@ -432,7 +571,7 @@ body {
 .rows-left {
     left: -2%;
 }
-.rows-rigth {
+.rows-right {
     right: -3%;
 }
 .favorite-apps-rows-item {
@@ -489,6 +628,59 @@ body {
     text-decoration-line: underline;
     text-transform: uppercase;
     color: #141414;
+}
+@media (max-width: 1200px) {
+    .favorite-apps-rows-item {
+        height: 60px;
+    }
+    .favorite-apps-rows-item svg {
+        width: 75%;
+        height: auto;
+    }
+    .favorite-apps-div {
+        top: 0%;
+        align-items: center;
+    }
+    .favorite-apps-h2 {
+        font-size: 35px;
+    }
+    .favorite-apps-text {
+        font-size: 15px;
+    }
+    .favorite-apps-button {
+        width: 250px;
+        height: 60px;
+    }
+}
+@media (max-width: 992px) {
+    .favorite-apps-rows-item:nth-child(3n+1) {
+        display: none;
+    }
+    .favorite-apps-rows-item {
+        height: 90px;
+    }
+    .favorite-apps-div {
+        top: 5%;
+        left: 30%;
+    }
+    .favorite-apps-h2 {
+        font-size: 45px;
+    }
+    .favorite-apps-text {
+        font-size: 18px;
+    }
+    .favorite-apps-button {
+        width: 287px;
+        height: 80px;
+    }
+}
+@media (max-width: 768px) {
+    .favorite-apps-rows-item:nth-child(2n+2) {
+        display: none;
+    }
+    .favorite-apps-div {
+        left: 25%;
+    }
 }
 /* -----------------Scheduling Business--------------- */
 
@@ -690,6 +882,83 @@ body {
     text-decoration-line: underline;
     text-transform: uppercase;
 }
+@media (max-width: 1400px) {
+    .schedule-business-info {
+        left: 3%;
+    }
+}
+@media (max-width: 1200px) {
+    .schedule-business-h2 {
+        font-size: 70px;
+    }
+    .schedule-business-info {
+        width: fit-content;
+        left: 10%;
+    }
+    .schedule-business-info-main {
+        border: none;
+    }
+    .schedule-business-info-telemedicine {
+        display: none;
+    }
+    .schedule-business-button-general {
+        width: 220px;
+        height: 80px;
+    }
+}
+@media (max-width: 992px) {
+    .schedule-business-h2 {
+        font-size: 60px;
+    }
+    .schedule-business-svg {
+        height: 100%;
+        top: 25%;
+    }
+    .schedule-business-info {
+        left: 1%;
+    }
+    .schedule-business-card {
+        width: 250px;
+    }
+    .schedule-business-card2 {
+        width: 330px;
+    }
+    .schedule-business-button-general {
+        width: 200px;
+        height: 70px;
+        top: 96%;
+    }
+}
+@media (max-width: 768px) {
+    .schedule-business-h2 {
+        font-size: 50px;
+    }
+    .schedule-business-svg {
+        top: 15%;
+    }
+    .schedule-business-button-span-black {
+        font-size: 14px;
+    }
+    .schedule-business-button-span {
+        font-size: 14px;
+    }
+    .schedule-business-info {
+        left: 10%;
+    }
+    .schedule-business-card {
+        display: none;
+    }
+    .schedule-business-card2 {
+        margin: 48px 42px 48px 42px;
+    }
+    .schedule-business-button-general {
+        width: 180px;
+        height: 60px;
+    }
+    .schedule-business-button-general-span {
+        font-size: 17px;
+    }
+}
 /* ----------------------Quote------------------------ */
 
 .quote-main {
@@ -729,6 +998,39 @@ body {
 }
 .quote-people-img {
     margin-left: 15px;
+}
+@media (max-width: 1200px) {
+    .quote-info-h2 {
+        font-size: 40px;
+    }
+    .quoute-info-svg {
+        width: 55px;
+    }
+    .quoute-info-svg2 {
+        width: 55px;
+    }
+    .quote-people {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 992px) {
+    .quote-info {
+        justify-content: space-between;
+    }
+    .quote-info-h2 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 768px) {
+    .quote-info-h2 {
+        font-size: 27px;
+    }
+    .quoute-info-svg {
+        width: 40px;
+    }
+    .quoute-info-svg2 {
+        width: 40px;
+    }
 }
 /* ---------------------Reviews--------------------- */
 
@@ -853,6 +1155,48 @@ body {
     text-decoration-line: underline;
     text-transform: uppercase;
 }
+@media (max-width: 1400px) {
+    .reviews-main-column:nth-child(4) {
+        display: none;
+    }
+    .reviews-main-column {
+        width: 100%;
+        align-items: center;
+    }
+}
+@media (max-width: 1200px) {
+    .reviews-main-column-div {
+        width: 288px;
+    }
+    .reviews-gradient-button {
+        left: 40%;
+    }
+}
+@media (max-width: 992px) {
+    .reviews-main-column:nth-child(3) {
+        display: none;
+    }
+    .reviews-gradient-button {
+        left: 35%;
+    }
+}
+@media (max-width: 768px) {
+    .reviews-main-column-div {
+        width: 235px;
+    }
+    .reviews-main-column-div-person-info-text {
+        font-size: 18px;
+    }
+    .reviews-main-column-div-person-info-tag {
+        font-size: 15px;
+    }
+    .reviews-main-column-div-review {
+        font-size: 16px;
+    }
+    .reviews-gradient-button {
+        left: 32%;
+    }
+}
 /* ----------------Footer---------------- */
 
 .footer-main {
@@ -921,4 +1265,50 @@ body {
     font-size: 17px;
     line-height: 28px;
     text-decoration-line: underline;
+}
+@media (max-width: 1200px) {
+    .footer-main-list {
+        margin: 30px 0px 0px 0px;
+    }
+    .footer-main-list-ul {
+        margin: 20px 0px 0px 20px;
+    }
+}
+@media (max-width: 992px) {
+    .footer-main {
+        height: 500px;
+    }
+    .footer-main-list {
+        margin: 0;
+    }
+    .footer-main-list-ul:nth-child(3) {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .footer-main-logo {
+        margin-left: 15px;
+    }
+    .footer-main-logo-svg {
+        top: 10%;
+    }
+    .footer-main-imgs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .footer-main-svgs {
+        justify-content: center;
+    }
+    .footer-main-svg3 {
+        margin: 0px 10px 0px 10px;
+    }
+    .footer-main-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-main-list-ul-item {
+        margin: 8px 0px 8px 0px;
+    }
 }
