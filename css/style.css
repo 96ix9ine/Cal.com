@@ -23,11 +23,34 @@ body {
 .header-h1 {
     display: none;
 }
+.header-svg-link {
+    height: fit-content;
+}
 .header-searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 35%;
     height: 48px;
     border: 2px solid black;
     border-radius: 30px;
+    transition: all 0.4s ease;
+}
+.header-searchbar-rofl {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.header-searchbar:hover span,
+.header-searchbar:focus span {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.4s ease;
 }
 .header-button {
     width: 120px;
@@ -36,6 +59,15 @@ body {
     border-radius: 30px;
     background-color: #141414;
     color: white;
+    transition: all 0.4s ease;
+}
+.header-button:hover,
+.header-button:focus {
+    background-color: #a8a8a8;
+    outline: none;
+    box-shadow: 0px 0px 12px 4px #141414;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 .header-button-text {
     font-style: normal;
@@ -315,6 +347,15 @@ body {
     border: 2px solid #141414;
     box-shadow: 0px 4px 0px #141414;
     border-radius: 32px;
+    transition: all 0.4s ease;
+}
+.header-form-button:hover,
+.header-form-button:focus {
+    background-color: #f1f8ff;
+    outline: none;
+    box-shadow: -5px 4px 0px #141414;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 .header-form-button-text {
     font-style: normal;
@@ -333,6 +374,9 @@ body {
 }
 
 @media (max-width: 1400px) {
+    .header-searchbar-rofl {
+        font-size: 18px;
+    }
     .header-info-text {
         font-size: 18px;
     }
@@ -354,6 +398,9 @@ body {
 @media (max-width: 1200px) {
     .header-container {
         justify-content: space-around;
+    }
+    .header-searchbar-rofl {
+        font-size: 16px;
     }
     .header-info-text {
         font-size: 18px;
@@ -388,6 +435,9 @@ body {
     .header-container {
         justify-content: space-between;
     }
+    .header-searchbar-rofl {
+        font-size: 12px;
+    }
     .header-info-div {
         width: 370px;
     }
@@ -415,6 +465,9 @@ body {
     }
 }
 @media (max-width: 768px) {
+    .header-searchbar-rofl {
+        font-size: 8px;
+    }
     .header-smalldiv,
     .header-info-text {
         display: none;
@@ -618,6 +671,15 @@ body {
     border: 2px solid #141414;
     box-shadow: 0px 4px 0px #141414;
     border-radius: 30px;
+    transition: all 0.4s ease;
+}
+.favorite-apps-button:hover,
+.favorite-apps-button:focus {
+    background-color: #f1f8ff;
+    outline: none;
+    box-shadow: -5px 4px 0px #141414;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 .favorite-apps-button-span {
     font-style: normal;
@@ -728,6 +790,15 @@ body {
     background: #141414;
     border: 2px solid #141414;
     border-radius: 32px;
+    transition: all 0.4s ease;
+}
+.schedule-business-button-black:hover,
+.schedule-business-button-black:focus {
+    background-color: #f1f8ff;
+    outline: none;
+    box-shadow: -2px 4px 0px #141414;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 .schedule-business-button-span-black {
     font-style: normal;
@@ -739,6 +810,10 @@ body {
     text-transform: uppercase;
     color: #F9FAFB;
 }
+.schedule-business-button-black:hover span,
+.schedule-business-button-black:focus span {
+    color: black;
+}
 .schedule-business-button {
     display: flex;
     justify-content: center;
@@ -749,6 +824,16 @@ body {
     background: #F4F4F4;
     border: 2px dashed #141414;
     border-radius: 32px;
+    transition: all 0.4s ease;
+}
+.schedule-business-button:hover,
+.schedule-business-button:focus {
+    background-color: white;
+    outline: none;
+    border: none;
+    box-shadow: -2px 4px 0px #141414;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 .schedule-business-button-span {
     font-style: normal;
@@ -872,6 +957,15 @@ body {
     border: 2px solid #141414;
     box-shadow: 0px 4px 0px #141414;
     border-radius: 32px;
+    transition: all 0.4s ease;
+}
+.schedule-business-button-general:hover,
+.schedule-business-button-general:focus {
+    background-color: #f1f8ff;
+    outline: none;
+    box-shadow: -5px 4px 0px #141414;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 .schedule-business-button-general-span {
     margin-right: 10px;
@@ -981,6 +1075,15 @@ body {
     line-height: 61.8px;
     text-decoration-line: underline;
 }
+.quote-info-button {
+    background-color: transparent;
+    border: none;
+    order: -1;
+}
+.quote-info-button2 {
+    background-color: transparent;
+    border: none;
+}
 
 .quote-people {
     display: flex;
@@ -1003,10 +1106,10 @@ body {
     .quote-info-h2 {
         font-size: 40px;
     }
-    .quoute-info-svg {
+    .quote-info-svg {
         width: 55px;
     }
-    .quoute-info-svg2 {
+    .quote-info-svg2 {
         width: 55px;
     }
     .quote-people {
@@ -1025,10 +1128,10 @@ body {
     .quote-info-h2 {
         font-size: 27px;
     }
-    .quoute-info-svg {
+    .quote-info-svg {
         width: 40px;
     }
-    .quoute-info-svg2 {
+    .quote-info-svg2 {
         width: 40px;
     }
 }
@@ -1149,6 +1252,16 @@ body {
     border-radius: 32px;
     border: 2px solid #141414;
     background: #141414;
+    transition: all 0.4s ease;
+}
+.reviews-gradient-button:hover,
+.reviews-gradient-button:focus {
+    background-color: #a8a8a8;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 12px 4px #141414;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 .reviews-gradient-button-top {
     top: 95%;
